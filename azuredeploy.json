@@ -63,10 +63,6 @@
             "providerId": "Microsoft",
             "providerSku": "DZH3178M639F",
             "applicationName": "[format('{0}-Microsoft', variables('quantumWorkspaceName'))]"
-          },
-          {
-            "providerId": "ionq.qpu",
-            "applicationName": "[format('{0}-IonQ', variables('quantumWorkspaceName'))]"
           }
         ],
         "storageAccount": "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]"
