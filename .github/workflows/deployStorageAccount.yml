@@ -20,7 +20,7 @@ jobs:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.AZURE_RG }}
         template: ./azuredeploy.json
-        parameters: appName="myQuantumWorkspace" location="westeurope"
+        parameters: appName="qiac" location="westeurope"
 #         parameters: storageAccountType=Standard_LRS
 
 
