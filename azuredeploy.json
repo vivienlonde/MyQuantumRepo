@@ -36,7 +36,7 @@
   },
   "variables": {
     "quantumWorkspaceName": "[format('{0}-ws', parameters('appName'))]",
-    "storageAccountName": "[format('{0}{1}', parameters('appName'), substring(uniqueString(resourceGroup().id), 0, 5))]"
+    "storageAccountName": "[format('{0}{1}', parameters('appName'), 'storage')]"
   },
   "resources": [
     {
