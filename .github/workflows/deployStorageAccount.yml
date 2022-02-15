@@ -21,7 +21,6 @@ jobs:
         resourceGroupName: ${{ secrets.AZURE_RG }}
         template: ./azuredeploy.json
         parameters: appName="qiac" location="westeurope"
-#         parameters: storageAccountType=Standard_LRS
 
 
       # output containerName variable from template
