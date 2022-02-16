@@ -192,6 +192,15 @@
           "lib/netstandard1.0/Humanizer.dll": {}
         }
       },
+      "libLLVM.runtime.win-x64/11.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-x64/native/libLLVM.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
       "Markdig.Signed/0.20.0": {
         "type": "package",
         "compile": {
@@ -466,6 +475,128 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Configuration/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.CommandLine/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.2.0",
+          "Microsoft.Extensions.FileProviders.Physical": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.2.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.2.0",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
+          "Microsoft.Extensions.FileSystemGlobbing": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
       "Microsoft.Identity.Client/4.30.1": {
         "type": "package",
         "compile": {
@@ -589,6 +720,68 @@
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.Quantum.EntryPointDriver.dll": {}
+        }
+      },
+      "Microsoft.Quantum.Providers.Core/0.22.187631": {
+        "type": "package",
+        "dependencies": {
+          "Bond.CSharp": "9.0.3",
+          "Microsoft.Azure.Quantum.Client": "0.22.187631",
+          "Microsoft.Extensions.Configuration": "2.2.0",
+          "Microsoft.Extensions.Configuration.CommandLine": "2.2.0",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.2.4",
+          "Microsoft.Extensions.Configuration.Json": "2.2.0",
+          "Microsoft.Quantum.Providers.Datastructures": "0.22.187631",
+          "Microsoft.Quantum.QirGeneration": "0.22.187631",
+          "Microsoft.Quantum.Simulators": "0.22.187631",
+          "System.Text.Json": "5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Quantum.Providers.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Quantum.Providers.Core.dll": {}
+        }
+      },
+      "Microsoft.Quantum.Providers.Datastructures/0.22.187631": {
+        "type": "package",
+        "dependencies": {
+          "Bond.CSharp": "9.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Quantum.Providers.Datastructures.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Quantum.Providers.Datastructures.dll": {}
+        }
+      },
+      "Microsoft.Quantum.QirGeneration/0.22.187631": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Quantum.Compiler": "0.22.187631"
+        },
+        "compile": {
+          "lib/netstandard2.1/LLVMSharp.dll": {},
+          "lib/netstandard2.1/Microsoft.Bcl.HashCode.dll": {},
+          "lib/netstandard2.1/Microsoft.Quantum.LlvmBindings.dll": {},
+          "lib/netstandard2.1/Microsoft.Quantum.QirGeneration.dll": {},
+          "lib/netstandard2.1/System.Buffers.dll": {},
+          "lib/netstandard2.1/System.Memory.dll": {},
+          "lib/netstandard2.1/System.Numerics.Vectors.dll": {},
+          "lib/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/LLVMSharp.dll": {},
+          "lib/netstandard2.1/Microsoft.Bcl.HashCode.dll": {},
+          "lib/netstandard2.1/Microsoft.Quantum.LlvmBindings.dll": {},
+          "lib/netstandard2.1/Microsoft.Quantum.QirGeneration.dll": {},
+          "lib/netstandard2.1/System.Buffers.dll": {},
+          "lib/netstandard2.1/System.Memory.dll": {},
+          "lib/netstandard2.1/System.Numerics.Vectors.dll": {},
+          "lib/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "build": {
+          "build/Microsoft.Quantum.QirGeneration.props": {}
         }
       },
       "Microsoft.Quantum.QSharp.Core/0.22.187631": {
@@ -2095,7 +2288,7 @@
           "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
         }
       },
-      "System.Text.Json/4.7.2": {
+      "System.Text.Json/5.0.1": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
@@ -2526,6 +2719,19 @@
         "lib/netstandard1.0/Humanizer.dll"
       ]
     },
+    "libLLVM.runtime.win-x64/11.0.0": {
+      "sha512": "uH74BF8lcb8MuwP3Y7wd+9YM8y03KrJe/KqUG79//MwAGEJhTPCUPyKAr0eInqTQFZHbGNPF0LTaeF58GkYVPQ==",
+      "type": "package",
+      "path": "libllvm.runtime.win-x64/11.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "libllvm.runtime.win-x64.11.0.0.nupkg.sha512",
+        "libllvm.runtime.win-x64.nuspec",
+        "runtimes/win-x64/native/libLLVM.dll"
+      ]
+    },
     "Markdig.Signed/0.20.0": {
       "sha512": "zBcIuGYXmtxW3PWgF8/+VUcYBXP3uwNwFjiu3o2ao5w5TRwgdq2353yBOuST2OprZ7bCXnMUGyqXoMHWDJNDIQ==",
       "type": "package",
@@ -2930,6 +3136,136 @@
         "version.txt"
       ]
     },
+    "Microsoft.Extensions.Configuration/2.2.0": {
+      "sha512": "nOP8R1mVb/6mZtm2qgAJXn/LFm/2kMjHDAg/QJLFG6CuWYJtaD3p1BwQhufBVvRzL9ceJ/xF0SQ0qsI2GkDQAA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.2.2.0.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/2.2.0": {
+      "sha512": "65MrmXCziWaQFrI0UHkQbesrX5wTwf9XPjY5yFm/VkgJKFJ5gqvXRoXjIZcf2wLi5ZlwGz/oMYfyURVCWbM5iw==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.CommandLine/2.2.0": {
+      "sha512": "4kJIGOSRqD1Ccqerst4t/zsNs51plR7BIxbdKO1J/9rL+2DuNT+ieAuEv+HROelqTam3yOpKFR7TtHBt3oLpOA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.commandline/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.xml",
+        "microsoft.extensions.configuration.commandline.2.2.0.nupkg.sha512",
+        "microsoft.extensions.configuration.commandline.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.4": {
+      "sha512": "Os7uRhp9xwawY5w2tgXw/86YrmAJZl6aHiQVdS9boWybTWPkJOvXXrQ3AGwuldN1W/r+cfnwRe2ePGeFO4zlzg==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.environmentvariables/2.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.xml",
+        "microsoft.extensions.configuration.environmentvariables.2.2.4.nupkg.sha512",
+        "microsoft.extensions.configuration.environmentvariables.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.FileExtensions/2.2.0": {
+      "sha512": "H1qCpWBC8Ed4tguTR/qYkbb3F6DI5Su3t8xyFo3/5MzAd8PwPpHzgX8X04KbBxKmk173Pb64x7xMHarczVFQUA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.fileextensions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
+        "microsoft.extensions.configuration.fileextensions.2.2.0.nupkg.sha512",
+        "microsoft.extensions.configuration.fileextensions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Json/2.2.0": {
+      "sha512": "jUDdmLyFmLf9V3mqnMzSAzAv4QigJ67tZh5Q7HBXeBnESL2UyeesNG6jSBti+b63JpxZf+EDyn+anx3gyrNxug==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.json/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.xml",
+        "microsoft.extensions.configuration.json.2.2.0.nupkg.sha512",
+        "microsoft.extensions.configuration.json.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
+      "sha512": "EcnaSsPTqx2MGnHrmWOD0ugbuuqVT8iICqSqPzi45V5/MA1LjUNb0kwgcxBGqizV1R+WeBK7/Gw25Jzkyk9bIw==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Physical/2.2.0": {
+      "sha512": "tbDHZnBJkjYd9NjlRZ9ondDiv1Te3KYCTW2RWpR1B0e1Z8+EnFRo7qNnHkkSCixLdlPZzhjlX24d/PixQ7w2dA==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.physical/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.xml",
+        "microsoft.extensions.fileproviders.physical.2.2.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.physical.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/2.2.0": {
+      "sha512": "ZSsHZp3PyW6vk37tDEdypjgGlNtpJ0EixBMOfUod2Thx7GtwfFSAQXUQx8a8BN8vfWKGGMbp7jPWdoHx/At4wQ==",
+      "type": "package",
+      "path": "microsoft.extensions.filesystemglobbing/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.xml",
+        "microsoft.extensions.filesystemglobbing.2.2.0.nupkg.sha512",
+        "microsoft.extensions.filesystemglobbing.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/2.2.0": {
+      "sha512": "azyQtqbm4fSaDzZHD/J+V6oWMFaf2tWP4WEGIYePLCMw3+b2RQdj9ybgbQyjCshcitQKQ4lEDOZjmSlTTrHxUg==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec"
+      ]
+    },
     "Microsoft.Identity.Client/4.30.1": {
       "sha512": "xk8tJeGfB2yD3+d7a0DXyV7/HYyEG10IofUHYHoPYKmDbroi/j9t1BqSHgbq1nARDjg7m8Ki6e21AyNU7e/R4Q==",
       "type": "package",
@@ -3068,6 +3404,54 @@
         "microsoft.quantum.entrypointdriver.0.22.187631.nupkg.sha512",
         "microsoft.quantum.entrypointdriver.nuspec",
         "qdk-nuget-icon.png"
+      ]
+    },
+    "Microsoft.Quantum.Providers.Core/0.22.187631": {
+      "sha512": "SRiPnR9FrpX0Jcmp8bGNls0eFc757PlYrC9uHMBeTJn9mzM81inh2chFn+49izEwOl+xMl/a4Um8nXqI9p8wkg==",
+      "type": "package",
+      "path": "microsoft.quantum.providers.core/0.22.187631",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.1/Microsoft.Quantum.Providers.Core.dll",
+        "microsoft.quantum.providers.core.0.22.187631.nupkg.sha512",
+        "microsoft.quantum.providers.core.nuspec",
+        "qdk-nuget-icon.png"
+      ]
+    },
+    "Microsoft.Quantum.Providers.Datastructures/0.22.187631": {
+      "sha512": "OEPePJY2sIzfa3Gw2dkD7VvQV9/i/IGFQjy+O37kvwO0bQdkdlvkTWoljB9O3I/po9uAqqeQRTQXozQfQNmvDw==",
+      "type": "package",
+      "path": "microsoft.quantum.providers.datastructures/0.22.187631",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.1/Microsoft.Quantum.Providers.Datastructures.dll",
+        "microsoft.quantum.providers.datastructures.0.22.187631.nupkg.sha512",
+        "microsoft.quantum.providers.datastructures.nuspec",
+        "qdk-nuget-icon.png"
+      ]
+    },
+    "Microsoft.Quantum.QirGeneration/0.22.187631": {
+      "sha512": "QfAeXiUYXUUwFHIcuBoNbvLC2az7CKawBT0WPzQiqWNg2MJeGLk+SGiwbsapMjbT5EfOydAFNIwrFRgMMoAuaw==",
+      "type": "package",
+      "path": "microsoft.quantum.qirgeneration/0.22.187631",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.Quantum.QirGeneration.props",
+        "images/qdk-nuget-icon.png",
+        "lib/netstandard2.1/LLVMSharp.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.HashCode.dll",
+        "lib/netstandard2.1/Microsoft.Quantum.LlvmBindings.dll",
+        "lib/netstandard2.1/Microsoft.Quantum.QirGeneration.dll",
+        "lib/netstandard2.1/Microsoft.Quantum.QirGeneration.xml",
+        "lib/netstandard2.1/System.Buffers.dll",
+        "lib/netstandard2.1/System.Memory.dll",
+        "lib/netstandard2.1/System.Numerics.Vectors.dll",
+        "lib/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "microsoft.quantum.qirgeneration.0.22.187631.nupkg.sha512",
+        "microsoft.quantum.qirgeneration.nuspec"
       ]
     },
     "Microsoft.Quantum.QSharp.Core/0.22.187631": {
@@ -6465,10 +6849,10 @@
         "version.txt"
       ]
     },
-    "System.Text.Json/4.7.2": {
-      "sha512": "TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
+    "System.Text.Json/5.0.1": {
+      "sha512": "/UM3UK1dXKl8Ybysg/21gM4S8DJgkR+yLU8JwqCVbuNqQNImelntgYFAN5QxR8sJJ1kMx//hOUdf0lltosi8cQ==",
       "type": "package",
-      "path": "system.text.json/4.7.2",
+      "path": "system.text.json/5.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6481,7 +6865,7 @@
         "lib/netcoreapp3.0/System.Text.Json.xml",
         "lib/netstandard2.0/System.Text.Json.dll",
         "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.4.7.2.nupkg.sha512",
+        "system.text.json.5.0.1.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -7042,9 +7426,12 @@
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.Quantum.CSharpGeneration >= 0.22.187631",
       "Microsoft.Quantum.EntryPointDriver >= 0.22.187631",
+      "Microsoft.Quantum.Providers.Core >= 0.22.187631",
       "Microsoft.Quantum.QSharp.Core >= 0.22.187631",
+      "Microsoft.Quantum.QirGeneration >= 0.22.187631",
       "Microsoft.Quantum.Runtime.Core >= 0.22.187631",
-      "Microsoft.Quantum.Standard >= 0.22.187631"
+      "Microsoft.Quantum.Standard >= 0.22.187631",
+      "libLLVM.runtime.win-x64 >= 11.0.0"
     ]
   },
   "packageFolders": {
@@ -7099,9 +7486,19 @@
             "version": "[0.22.187631, )",
             "autoReferenced": true
           },
+          "Microsoft.Quantum.Providers.Core": {
+            "target": "Package",
+            "version": "[0.22.187631, )"
+          },
           "Microsoft.Quantum.QSharp.Core": {
             "target": "Package",
             "version": "[0.22.187631, )"
+          },
+          "Microsoft.Quantum.QirGeneration": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[0.22.187631, )",
+            "autoReferenced": true
           },
           "Microsoft.Quantum.Runtime.Core": {
             "target": "Package",
@@ -7111,6 +7508,13 @@
           "Microsoft.Quantum.Standard": {
             "target": "Package",
             "version": "[0.22.187631, )"
+          },
+          "libLLVM.runtime.win-x64": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[11.0.0, )",
+            "autoReferenced": true,
+            "generatePathProperty": true
           }
         },
         "imports": [

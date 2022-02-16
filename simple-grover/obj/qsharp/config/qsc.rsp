@@ -12,12 +12,27 @@
     "C:\Users\vivie\.nuget\packages\azure.quantum.jobs\1.0.0-beta.3\lib\netstandard2.0\Azure.Quantum.Jobs.dll"
     "C:\Users\vivie\.nuget\packages\azure.storage.blobs\12.10.0\lib\netstandard2.0\Azure.Storage.Blobs.dll"
     "C:\Users\vivie\.nuget\packages\azure.storage.common\12.9.0\lib\netstandard2.0\Azure.Storage.Common.dll"
+    "C:\Users\vivie\.nuget\packages\microsoft.quantum.qirgeneration\0.22.187631\lib\netstandard2.1\LLVMSharp.dll"
     "C:\Users\vivie\.nuget\packages\microsoft.azure.quantum.client\0.22.187631\lib\netstandard2.1\Microsoft.Azure.Quantum.Client.dll"
     "C:\Users\vivie\.nuget\packages\microsoft.bcl.asyncinterfaces\1.1.1\ref\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll"
+    "C:\Users\vivie\.nuget\packages\microsoft.quantum.qirgeneration\0.22.187631\lib\netstandard2.1\Microsoft.Bcl.HashCode.dll"
+    "C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.configuration.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll"
+    "C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.configuration.commandline\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.CommandLine.dll"
+    "C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.configuration\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll"
+    "C:\Users\vivie\.nuget\packages\microsoft.extensions.configuration.environmentvariables\2.2.4\lib\netstandard2.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll"
+    "C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.configuration.fileextensions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.FileExtensions.dll"
+    "C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.configuration.json\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Json.dll"
+    "C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.fileproviders.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll"
+    "C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.fileproviders.physical\2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Physical.dll"
+    "C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.primitives\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll"
     "C:\Users\vivie\.nuget\packages\microsoft.identity.client\4.30.1\lib\netcoreapp2.1\Microsoft.Identity.Client.dll"
     "C:\Users\vivie\.nuget\packages\microsoft.identity.client.extensions.msal\2.18.4\lib\netcoreapp2.1\Microsoft.Identity.Client.Extensions.Msal.dll"
     "C:\Users\vivie\.nuget\packages\microsoft.quantum.compiler\0.22.187631\lib\netstandard2.1\Microsoft.Quantum.BondSchemas.dll"
     "C:\Users\vivie\.nuget\packages\microsoft.quantum.entrypointdriver\0.22.187631\lib\netstandard2.1\Microsoft.Quantum.EntryPointDriver.dll"
+    "C:\Users\vivie\.nuget\packages\microsoft.quantum.qirgeneration\0.22.187631\lib\netstandard2.1\Microsoft.Quantum.LlvmBindings.dll"
+    "C:\Users\vivie\.nuget\packages\microsoft.quantum.providers.core\0.22.187631\lib\netstandard2.1\Microsoft.Quantum.Providers.Core.dll"
+    "C:\Users\vivie\.nuget\packages\microsoft.quantum.providers.datastructures\0.22.187631\lib\netstandard2.1\Microsoft.Quantum.Providers.Datastructures.dll"
+    "C:\Users\vivie\.nuget\packages\microsoft.quantum.qirgeneration\0.22.187631\lib\netstandard2.1\Microsoft.Quantum.QirGeneration.dll"
     "C:\Users\vivie\.nuget\packages\microsoft.quantum.compiler\0.22.187631\lib\netstandard2.1\Microsoft.Quantum.QsCompilationManager.dll"
     "C:\Users\vivie\.nuget\packages\microsoft.quantum.compiler\0.22.187631\lib\netstandard2.1\Microsoft.Quantum.QsCompiler.dll"
     "C:\Users\vivie\.nuget\packages\microsoft.quantum.compiler\0.22.187631\lib\netstandard2.1\Microsoft.Quantum.QsCore.dll"
@@ -38,15 +53,17 @@
     "C:\Users\vivie\.nuget\packages\windowsazure.storage\9.3.3\lib\netstandard1.3\Microsoft.WindowsAzure.Storage.dll"
     "C:\Users\vivie\.nuget\packages\numsharp\0.20.5\lib\netstandard2.0\NumSharp.Core.dll"
 --load
+    "C:\Users\vivie\.nuget\packages\microsoft.quantum.qirgeneration\0.22.187631\build\/../lib/netstandard2.1/Microsoft.Quantum.QirGeneration.dll"
     "C:\Users\vivie\.nuget\packages\microsoft.quantum.csharpgeneration\0.22.187631\build\/../lib/netstandard2.1/Microsoft.Quantum.CSharpGeneration.dll"
 --runtime
     FullComputation
---skip-monomorphization
 --package-load-fallback-folders
     "C:/Users/vivie/OneDrive/Documents/GitHub/MyQuantumRepo/simple-grover/bin/Debug/netcoreapp3.1/"
+--llvm-libs
+    C:\Users\vivie\.nuget\packages\libllvm.runtime.win-x64\11.0.0
 --assembly-properties
     DocsPackageId:SimpleGroverSample
-    ExecutionTarget:Any
+    ExecutionTarget:microsoft.simulator.fullstate
     AssemblyName:SimpleGroverSample
-    ProcessorArchitecture:Unspecified
+    ProcessorArchitecture:MicrosoftSimulator
     QSharpOutputType:QSharpExe
