@@ -52,19 +52,9 @@
               "version": "[0.22.187631, )",
               "autoReferenced": true
             },
-            "Microsoft.Quantum.Providers.Core": {
-              "target": "Package",
-              "version": "[0.22.187631, )"
-            },
             "Microsoft.Quantum.QSharp.Core": {
               "target": "Package",
               "version": "[0.22.187631, )"
-            },
-            "Microsoft.Quantum.QirGeneration": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[0.22.187631, )",
-              "autoReferenced": true
             },
             "Microsoft.Quantum.Runtime.Core": {
               "target": "Package",
@@ -74,13 +64,6 @@
             "Microsoft.Quantum.Standard": {
               "target": "Package",
               "version": "[0.22.187631, )"
-            },
-            "libLLVM.runtime.win-x64": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[11.0.0, )",
-              "autoReferenced": true,
-              "generatePathProperty": true
             }
           },
           "imports": [

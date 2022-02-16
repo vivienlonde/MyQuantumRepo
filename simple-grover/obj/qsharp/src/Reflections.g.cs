@@ -71,7 +71,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
             set;
         }
 
-        protected IAdjointable<(IAdjointable,IQArray<Qubit>)> Microsoft__Quantum__Canon___15fb5150ae3649958ac38a4e43ca6009_ApplyToEachA
+        protected IAdjointable Microsoft__Quantum__Canon__ApplyToEachA
         {
             get;
             set;
@@ -101,11 +101,11 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
 #line 23 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
                     Microsoft__Quantum__Intrinsic__H.Apply(outputQubit);
 #line 27 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
-                    Microsoft__Quantum__Canon___15fb5150ae3649958ac38a4e43ca6009_ApplyToEachA.Apply((Microsoft__Quantum__Intrinsic__X, inputQubits.Slice(new QRange(((2L < 0L) ? (inputQubits.Length - 1L) : 0L), 2L, ((2L < 0L) ? 0L : (inputQubits.Length - 1L))))));
+                    Microsoft__Quantum__Canon__ApplyToEachA.Apply((Microsoft__Quantum__Intrinsic__X, inputQubits.Slice(new QRange(((2L < 0L) ? (inputQubits.Length - 1L) : 0L), 2L, ((2L < 0L) ? 0L : (inputQubits.Length - 1L))))));
 #line 29 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
                     Microsoft__Quantum__Intrinsic__X.Controlled.Apply((inputQubits, outputQubit));
 #line 16 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
-                    Microsoft__Quantum__Canon___15fb5150ae3649958ac38a4e43ca6009_ApplyToEachA.Adjoint.Apply((Microsoft__Quantum__Intrinsic__X, inputQubits.Slice(new QRange(((2L < 0L) ? (inputQubits.Length - 1L) : 0L), 2L, ((2L < 0L) ? 0L : (inputQubits.Length - 1L))))));
+                    Microsoft__Quantum__Canon__ApplyToEachA.Adjoint.Apply((Microsoft__Quantum__Intrinsic__X, inputQubits.Slice(new QRange(((2L < 0L) ? (inputQubits.Length - 1L) : 0L), 2L, ((2L < 0L) ? 0L : (inputQubits.Length - 1L))))));
 #line 16 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
                     Microsoft__Quantum__Intrinsic__H.Adjoint.Apply(outputQubit);
 #line 16 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
@@ -140,7 +140,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
             this.Release__ = this.__Factory__.Get<Release>(typeof(global::Microsoft.Quantum.Intrinsic.Release));
             this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
             this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
-            this.Microsoft__Quantum__Canon___15fb5150ae3649958ac38a4e43ca6009_ApplyToEachA = this.__Factory__.Get<IAdjointable<(IAdjointable,IQArray<Qubit>)>>(typeof(global::Microsoft.Quantum.Canon._15fb5150ae3649958ac38a4e43ca6009_ApplyToEachA));
+            this.Microsoft__Quantum__Canon__ApplyToEachA = this.__Factory__.Get<IAdjointable>(typeof(global::Microsoft.Quantum.Canon.ApplyToEachA<>));
             this.Length__ = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Core.Length<>));
         }
 
@@ -227,13 +227,13 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
             set;
         }
 
-        protected ICallable<IQArray<Qubit>, IQArray<Qubit>> Microsoft__Quantum__Arrays___8ffd763c46674f93926a1160cd1a51e8_Most
+        protected ICallable Microsoft__Quantum__Arrays__Most
         {
             get;
             set;
         }
 
-        protected ICallable<IQArray<Qubit>, Qubit> Microsoft__Quantum__Arrays___03013f2e0b6b48af8ec62c932e6021e8_Tail
+        protected ICallable Microsoft__Quantum__Arrays__Tail
         {
             get;
             set;
@@ -243,7 +243,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
         {
             var inputQubits = __in__;
 #line 52 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
-            Microsoft__Quantum__Intrinsic__Z.Controlled.Apply((Microsoft__Quantum__Arrays___8ffd763c46674f93926a1160cd1a51e8_Most.Apply(inputQubits), Microsoft__Quantum__Arrays___03013f2e0b6b48af8ec62c932e6021e8_Tail.Apply(inputQubits)));
+            Microsoft__Quantum__Intrinsic__Z.Controlled.Apply((Microsoft__Quantum__Arrays__Most.Apply<IQArray<Qubit>>(inputQubits), Microsoft__Quantum__Arrays__Tail.Apply<Qubit>(inputQubits)));
 #line hidden
             return QVoid.Instance;
         }
@@ -252,8 +252,8 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
         public override void __Init__()
         {
             this.Microsoft__Quantum__Intrinsic__Z = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.Z));
-            this.Microsoft__Quantum__Arrays___8ffd763c46674f93926a1160cd1a51e8_Most = this.__Factory__.Get<ICallable<IQArray<Qubit>, IQArray<Qubit>>>(typeof(global::Microsoft.Quantum.Arrays._8ffd763c46674f93926a1160cd1a51e8_Most));
-            this.Microsoft__Quantum__Arrays___03013f2e0b6b48af8ec62c932e6021e8_Tail = this.__Factory__.Get<ICallable<IQArray<Qubit>, Qubit>>(typeof(global::Microsoft.Quantum.Arrays._03013f2e0b6b48af8ec62c932e6021e8_Tail));
+            this.Microsoft__Quantum__Arrays__Most = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Arrays.Most<>));
+            this.Microsoft__Quantum__Arrays__Tail = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Arrays.Tail<>));
         }
 
         public override IApplyData __DataIn__(IQArray<Qubit> data) => data;
@@ -276,7 +276,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
 
         String ICallable.Name => "PrepareUniform";
         String ICallable.FullName => "Microsoft.Quantum.Samples.SimpleGrover.PrepareUniform";
-        protected IUnitary<(IUnitary,IQArray<Qubit>)> Microsoft__Quantum__Canon___6a717aeda39d440aae6e19523f2002a0_ApplyToEachCA
+        protected IUnitary Microsoft__Quantum__Canon__ApplyToEachCA
         {
             get;
             set;
@@ -292,7 +292,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
         {
             var inputQubits = __in__;
 #line 59 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
-            Microsoft__Quantum__Canon___6a717aeda39d440aae6e19523f2002a0_ApplyToEachCA.Apply((Microsoft__Quantum__Intrinsic__H, inputQubits));
+            Microsoft__Quantum__Canon__ApplyToEachCA.Apply((Microsoft__Quantum__Intrinsic__H, inputQubits));
 #line hidden
             return QVoid.Instance;
         }
@@ -302,7 +302,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
         {
             var inputQubits = __in__;
 #line 58 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
-            Microsoft__Quantum__Canon___6a717aeda39d440aae6e19523f2002a0_ApplyToEachCA.Adjoint.Apply((Microsoft__Quantum__Intrinsic__H, inputQubits));
+            Microsoft__Quantum__Canon__ApplyToEachCA.Adjoint.Apply((Microsoft__Quantum__Intrinsic__H, inputQubits));
 #line hidden
             return QVoid.Instance;
         }
@@ -312,7 +312,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
         {
             var (__controlQubits__,inputQubits) = __in__;
 #line 58 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
-            Microsoft__Quantum__Canon___6a717aeda39d440aae6e19523f2002a0_ApplyToEachCA.Controlled.Apply((__controlQubits__, (Microsoft__Quantum__Intrinsic__H, inputQubits)));
+            Microsoft__Quantum__Canon__ApplyToEachCA.Controlled.Apply((__controlQubits__, (Microsoft__Quantum__Intrinsic__H, inputQubits)));
 #line hidden
             return QVoid.Instance;
         }
@@ -322,7 +322,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
         {
             var (__controlQubits__,inputQubits) = __in__;
 #line 58 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
-            Microsoft__Quantum__Canon___6a717aeda39d440aae6e19523f2002a0_ApplyToEachCA.Adjoint.Controlled.Apply((__controlQubits__, (Microsoft__Quantum__Intrinsic__H, inputQubits)));
+            Microsoft__Quantum__Canon__ApplyToEachCA.Adjoint.Controlled.Apply((__controlQubits__, (Microsoft__Quantum__Intrinsic__H, inputQubits)));
 #line hidden
             return QVoid.Instance;
         }
@@ -330,7 +330,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
         ;
         public override void __Init__()
         {
-            this.Microsoft__Quantum__Canon___6a717aeda39d440aae6e19523f2002a0_ApplyToEachCA = this.__Factory__.Get<IUnitary<(IUnitary,IQArray<Qubit>)>>(typeof(global::Microsoft.Quantum.Canon._6a717aeda39d440aae6e19523f2002a0_ApplyToEachCA));
+            this.Microsoft__Quantum__Canon__ApplyToEachCA = this.__Factory__.Get<IUnitary>(typeof(global::Microsoft.Quantum.Canon.ApplyToEachCA<>));
             this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
         }
 
@@ -354,7 +354,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
 
         String ICallable.Name => "PrepareAllOnes";
         String ICallable.FullName => "Microsoft.Quantum.Samples.SimpleGrover.PrepareAllOnes";
-        protected IUnitary<(IUnitary,IQArray<Qubit>)> Microsoft__Quantum__Canon___6a717aeda39d440aae6e19523f2002a0_ApplyToEachCA
+        protected IUnitary Microsoft__Quantum__Canon__ApplyToEachCA
         {
             get;
             set;
@@ -370,7 +370,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
         {
             var inputQubits = __in__;
 #line 66 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
-            Microsoft__Quantum__Canon___6a717aeda39d440aae6e19523f2002a0_ApplyToEachCA.Apply((Microsoft__Quantum__Intrinsic__X, inputQubits));
+            Microsoft__Quantum__Canon__ApplyToEachCA.Apply((Microsoft__Quantum__Intrinsic__X, inputQubits));
 #line hidden
             return QVoid.Instance;
         }
@@ -380,7 +380,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
         {
             var inputQubits = __in__;
 #line 65 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
-            Microsoft__Quantum__Canon___6a717aeda39d440aae6e19523f2002a0_ApplyToEachCA.Adjoint.Apply((Microsoft__Quantum__Intrinsic__X, inputQubits));
+            Microsoft__Quantum__Canon__ApplyToEachCA.Adjoint.Apply((Microsoft__Quantum__Intrinsic__X, inputQubits));
 #line hidden
             return QVoid.Instance;
         }
@@ -390,7 +390,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
         {
             var (__controlQubits__,inputQubits) = __in__;
 #line 65 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
-            Microsoft__Quantum__Canon___6a717aeda39d440aae6e19523f2002a0_ApplyToEachCA.Controlled.Apply((__controlQubits__, (Microsoft__Quantum__Intrinsic__X, inputQubits)));
+            Microsoft__Quantum__Canon__ApplyToEachCA.Controlled.Apply((__controlQubits__, (Microsoft__Quantum__Intrinsic__X, inputQubits)));
 #line hidden
             return QVoid.Instance;
         }
@@ -400,7 +400,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
         {
             var (__controlQubits__,inputQubits) = __in__;
 #line 65 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\Reflections.qs"
-            Microsoft__Quantum__Canon___6a717aeda39d440aae6e19523f2002a0_ApplyToEachCA.Adjoint.Controlled.Apply((__controlQubits__, (Microsoft__Quantum__Intrinsic__X, inputQubits)));
+            Microsoft__Quantum__Canon__ApplyToEachCA.Adjoint.Controlled.Apply((__controlQubits__, (Microsoft__Quantum__Intrinsic__X, inputQubits)));
 #line hidden
             return QVoid.Instance;
         }
@@ -408,7 +408,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
         ;
         public override void __Init__()
         {
-            this.Microsoft__Quantum__Canon___6a717aeda39d440aae6e19523f2002a0_ApplyToEachCA = this.__Factory__.Get<IUnitary<(IUnitary,IQArray<Qubit>)>>(typeof(global::Microsoft.Quantum.Canon._6a717aeda39d440aae6e19523f2002a0_ApplyToEachCA));
+            this.Microsoft__Quantum__Canon__ApplyToEachCA = this.__Factory__.Get<IUnitary>(typeof(global::Microsoft.Quantum.Canon.ApplyToEachCA<>));
             this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
         }
 

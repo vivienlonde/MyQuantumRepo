@@ -66,7 +66,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
             set;
         }
 
-        protected ICallable<(ICallable,IQArray<Qubit>), IQArray<Result>> Microsoft__Quantum__Arrays___81ca77ea61d24bf3964e20fc597f7702_ForEach
+        protected ICallable Microsoft__Quantum__Arrays__ForEach
         {
             get;
             set;
@@ -103,7 +103,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
                     }
 
 #line 27 "C:\\Users\\vivie\\OneDrive\\Documents\\GitHub\\MyQuantumRepo\\simple-grover\\SimpleGrover.qs"
-                    return Microsoft__Quantum__Arrays___81ca77ea61d24bf3964e20fc597f7702_ForEach.Apply((Microsoft__Quantum__Measurement__MResetZ, qubits));
+                    return Microsoft__Quantum__Arrays__ForEach.Apply<IQArray<Result>>((Microsoft__Quantum__Measurement__MResetZ, qubits));
                 }
 #line hidden
                 catch
@@ -132,7 +132,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover
             this.NIterations__ = this.__Factory__.Get<ICallable<Int64, Int64>>(typeof(NIterations));
             this.ReflectAboutMarked__ = this.__Factory__.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(ReflectAboutMarked));
             this.ReflectAboutUniform__ = this.__Factory__.Get<ICallable<IQArray<Qubit>, QVoid>>(typeof(ReflectAboutUniform));
-            this.Microsoft__Quantum__Arrays___81ca77ea61d24bf3964e20fc597f7702_ForEach = this.__Factory__.Get<ICallable<(ICallable,IQArray<Qubit>), IQArray<Result>>>(typeof(global::Microsoft.Quantum.Arrays._81ca77ea61d24bf3964e20fc597f7702_ForEach));
+            this.Microsoft__Quantum__Arrays__ForEach = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Arrays.ForEach<,>));
             this.Microsoft__Quantum__Measurement__MResetZ = this.__Factory__.Get<ICallable<Qubit, Result>>(typeof(global::Microsoft.Quantum.Measurement.MResetZ));
         }
 
