@@ -31,7 +31,7 @@ namespace Microsoft.Quantum.Samples.SimpleGrover {
     /// Returns the number of Grover iterations needed to find a single marked
     /// item, given the number of qubits in a register.
     function NIterations(nQubits : Int) : Int {
-        let nItems = 1 <<< nQubits; // 2^numQubits
+        let nItems = 1 <<< nQubits; // 2^nQubits
         // compute number of iterations:
         let angle = ArcSin(1. / Sqrt(IntAsDouble(nItems)));
         let nIterations = Round(0.25 * PI() / angle - 0.5);
